@@ -1,0 +1,81 @@
+.main {
+  max-width: 400px;
+  margin: 37px auto;
+  padding: 32px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.label-register {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  /* color: #80001C; */
+  margin-bottom: 24px;
+}
+.required-mark {
+  color: red;
+  margin-left: 2px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px ;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-btn {
+  margin-left: 50px;
+  width: 70%;
+  background-color: #80001C;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.login-btn:hover {
+  background-color: #80001C;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 16px;
+}
+.text-register{
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 180px;
+}
+.register-btn{
+  margin-left: 2px;
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  color: #80001C;
+  border: 1px solid #80001C;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 16px;
+}
+.register-btn:hover{
+  background-color: #80001C;
+  color: #ffffff;
+}

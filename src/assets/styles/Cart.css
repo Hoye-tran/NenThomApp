@@ -1,0 +1,128 @@
+.container-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  /* text-align: center; */
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cart-table {
+  width: 850px;
+  /* min-width: 700px; */
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cart-table th {
+  /* background-color: #f0f0f0;
+  color: #000000; */
+  /* margin-left: 20px; */
+    background-color: #f0f0f0;
+    color: #000000;
+    text-align: center; 
+    padding: 12px;
+    font-weight: 600;
+}
+
+.cart-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.cart-table img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.information-check-cart {
+  display: flex;
+  flex-direction: column;
+  /* flex: 0 0 35%;; */
+  width: 350px;
+  /* width: 200px; */
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.textdelivery{
+  /* margin-top: 10px; */
+  color: #80001C;
+  text-align: center;
+}
+
+.text-information-check-cart {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #80001C;
+  text-align: center;
+  font-weight: 600;
+}
+
+.check-information-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.check-price,
+.check-delivery,
+.check-discount {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+#cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 18px;
+  color: #000;
+}
+#cart-list {
+  flex: 0 0 50%;
+}
+#payment-btn {
+  margin-top: 24px;
+  background-color: #3C3C43;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#payment-btn:hover {
+  background-color: #80001C;
+}
+
+.text-cart {
+  margin-top: 20px;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.text-empty {
+  font-size: 32px;
+  text-align: center;
+  color: #999;
+}

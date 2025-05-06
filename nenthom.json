@@ -1,0 +1,407 @@
+{
+  "seller": [
+    {
+      "sellerId": "1",
+      "username": "hoangyen2202",
+      "password": "abcd1234",
+      "id": "8f56"
+    }
+  ],
+  "buyers": [
+    {
+      "id": "1",
+      "username": "user1",
+      "password": "password1",
+      "address": "123 Main St",
+      "phone": "0123456789"
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "password": "password2",
+      "address": "456 Oak St",
+      "phone": "0987654321"
+    },
+    {
+      "id": "3",
+      "username": "diemmai123",
+      "password": "abcd1234",
+      "address": "01 Phan Thanh, Đà Nẵng",
+      "phone": "0123456789"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Nến thơm",
+      "sellerId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Tinh dầu",
+      "sellerId": "1"
+    },
+    {
+      "id": "3",
+      "name": "Sáp thơm",
+      "sellerId": "1"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "productName": "Nến thơm Mahogany White tea & Sage(140g)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/products/PicsArt_08-01-07.03.44_2048x.jpg?v=1627824863",
+      "productDescription": "Tinh dầu, sáp ong và sáp cọ thiên nhiên, an toàn và thân thiện với môi trường",
+      "productPrice": 750000,
+      "productStock": 4,
+      "categoryId": "1",
+      "product-stock": "43",
+      "product-categorise": "1"
+    },
+    {
+      "id": "2",
+      "productName": "Nến Thơm Mahogany Teakwood (2 bấc)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/files/Sacred-Sanctuary_1_2048x.jpg?v=1723101171",
+      "productDescription": "Tinh dầu, sáp ong và sáp cọ thiên nhiên, an toàn và thân thiện với môi trường",
+      "productPrice": 790000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "1"
+    },
+    {
+      "id": "3",
+      "productName": "Nến thơm Mahogany Teakwood hương thơm (140g)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/products/Swansong2_2048x.jpg?v=1665672744",
+      "productDescription": "Tinh dầu, sáp ong và sáp cọ thiên nhiên, an toàn và thân thiện với môi trường",
+      "productPrice": 351000,
+      "productRating": 4,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "1"
+    },
+    {
+      "id": "4",
+      "productName": "Nến Thơm Cinnamon Stick (140g)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/products/PicsArt_08-01-06.10.29_2048x.jpg?v=1629303564",
+      "productDescription": "Đúng như mùi đặc biệt của thanh quế, mùi hương gỗ mạnh mẽ này có thể tự bay lên hoặc pha trộn với các loại nước hoa khác để tạo thêm sự biến hóa. Cinnamon Stick là sự kết hợp của Lá quế và hạt nhục đậu khấu nướng khiến nốt hương đầu ấm áp và dễ chịu. ",
+      "productPrice": 254000,
+      "productRating": 4,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "1"
+    },
+    {
+      "id": "5",
+      "productName": "Nến Thơm Sandalwood (140g)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/products/NewBeginnings3_2048x.jpg?v=1643041504",
+      "productDescription": "Sandalwood như ngôi nhà gỗ sâu trong cánh rừng, tách biệt hoàn toàn với tất thảy lo toan, nhộn nhịp. Nơi đây ngập tràn bình yên, tiếng còi xe inh ỏi được thay bằng bản nhạc ngày thu của ve sầu, ếch,... ",
+      "productPrice": 345000,
+      "productRating": 4,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "1"
+    },
+    {
+      "id": "6",
+      "productName": "Nến Thơm White Tea (140g)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/products/PicsArt_09-15-01.42.42_2048x.jpg?v=1641310403",
+      "productDescription": "Hương thơm tươi mát, sạch sẽ của chanh, cam và quýt mang đến cảm giác tươi mát, trong lành như buổi sớm mai nơi đồi trà, không khói bụi, không ồn ào. ",
+      "productPrice": 145000,
+      "productRating": 4,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "1"
+    },
+    {
+      "id": "7",
+      "productName": "Nến Thơm  Honeysuckle & Jasmine (2 bấc)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/products/PicsArt_09-17-02.00.34_2048x.jpg?v=1631824420",
+      "productDescription": "Honeysuckle & Jasmine mang hương thơm hoa ngọt ngào như mật ong, sẽ khiến bạn như trải qua một mùa hè ở miền Nam Hoa Kỳ.",
+      "productPrice": 790000,
+      "productRating": 4,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "1"
+    },
+    {
+      "id": "8",
+      "productName": "Nến Thơm Cinnamon Stick (2 bấc)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/products/Noir2_4728ca0c-e828-46f3-bf93-a36eeea976d8_2048x.jpg?v=1642613460",
+      "productDescription": "Đúng như mùi đặc biệt của thanh quế, mùi hương gỗ mạnh mẽ này có thể tự bay lên hoặc pha trộn với các loại nước hoa khác để tạo thêm sự biến hóa. ",
+      "productPrice": 250000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "1"
+    },
+    {
+      "id": "9",
+      "productName": "Nến Thơm Tonka & Oud (140g)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/products/Seaside_Breeze_4_2048x.jpg?v=1656140032",
+      "productDescription": "Tonka & Oud là một hương thơm phức tạp, hiện đại với sức hấp dẫn cao cấp. Mùi hương gỗ này bắt đầu với hương đầu của amaretto và powder trước khi nó nhường chỗ cho trái tim của tonka và balsam.",
+      "productPrice": 250000,
+      "productRating": 4,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "1"
+    },
+    {
+      "id": "10",
+      "productName": "Nến Thơm Palo Santo (2 bấc)",
+      "productImgUrl": "https://www.misa.in/cdn/shop/products/FarawayLove4_2048x.jpg?v=1641898817",
+      "productDescription": "Đắm mình trong hương thơm nhẹ nhàng, làm sạch của hương thơm Palo Santo. Palo Santo là một loại cây có nguồn gốc từ Nam Mỹ theo truyền thống được sử dụng cho các mục đích y học và điều trị. ",
+      "productPrice": 145000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "1"
+    },
+    {
+      "id": "11",
+      "productName": "Tinh dầu hỗn hợp White tea & Sage Oil 20ml/50ml",
+      "productImgUrl": "https://aroma360.com/cdn/shop/products/Mystify-Procopy_700x.jpg?v=1708617116",
+      "productDescription": "Thành phần: Tinh dầu trà trắng (White Tea), đậu Tonka (Tonka Bean), chanh (Lemon),...",
+      "productPrice": 200000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    },
+    {
+      "id": "12",
+      "productName": "Tinh dầu Mahogany Teakwood",
+      "productImgUrl": "https://aroma360.com/cdn/shop/products/MarqueeMoon_800x.jpg?v=1702906922",
+      "productDescription": "Thành phần: Tinh dầu trà trắng (White Tea), đậu Tonka (Tonka Bean), chanh (Lemon),...",
+      "productPrice": 250000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    },
+    {
+      "id": "13",
+      "productName": "Tinh dầu Sakura",
+      "productImgUrl": "https://th.bing.com/th/id/R.58ddbb657bea4574e1f80df53750963a?rik=VhcFiblZ7rA5Tw&riu=http%3a%2f%2faroma360.com%2fcdn%2fshop%2farticles%2fNewYorkNewYork.jpg%3fv%3d1708011516&ehk=jD6zr5upgAowEFCLva2%2bC1LhqVtSKmsCquS%2fFyYZspI%3d&risl=&pid=ImgRaw&r=0",
+      "productDescription": "Thành phần: Tinh dầu hoa anh đào (Sakura), hoa hồng (Rose), hoa nhài (Jasmine),...",
+      "productPrice": 350000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    },
+    {
+      "id": "14",
+      "productName": "Tinh dầu Lemongrass & Orange",
+      "productImgUrl": "https://aroma360.com/cdn/shop/products/BlackVelvet50mL.jpg?v=1708617436",
+      "productDescription": "Tinh dầu Lemongrass & Orange hương thơm thú vị với nốt hương tươi mát rộn ràng pha chút ngọt thanh từ cam và hương thiên nhiên nồng nàn từ sả giúp không gian của bạn trở nên tươi mới.",
+      "productPrice": 250000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    },
+    {
+      "id": "15",
+      "productName": "Tinh dầu Bahama Breeze",
+      "productImgUrl": "https://aroma360.com/cdn/shop/products/24K50mL_500x.jpg?v=1695044550",
+      "productDescription": "Tinh dầu Bahama Breeze là một sự kết hợp hương thơm trái cây nhiệt đới. Như một món giải khát mát lạnh vào mùa hè với sự pha trộn của các loại trái cây, dứa, bưởi và xoài.",
+      "productPrice": 220000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    },
+    {
+      "id": "16",
+      "productName": "Tinh dầu Bamboo Leaves",
+      "productImgUrl": "https://aroma360.com/cdn/shop/products/LondonCalling_1200x.jpg?v=1654199447",
+      "productDescription": "Tinh dầu Bahama Breeze là một sự kết hợp hương thơm trái cây nhiệt đới. Như một món giải khát mát lạnh vào mùa hè với sự pha trộn của các loại trái cây, dứa, bưởi và xoài.",
+      "productPrice": 250000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    },
+    {
+      "id": "17",
+      "productName": "Tinh dầu Beach Walk",
+      "productImgUrl": "https://th.bing.com/th/id/OIP.6fHU0BT8g9mUwwYSI6AoxwHaJQ?w=1800&h=2250&rs=1&pid=ImgDetMain",
+      "productDescription": "Với sự hòa quyện tuyệt hảo của quýt và cam clementine tại ngay tầng hương đầu, Tinh dầu Beach Walk ghi điểm với sự thanh mát, tươi trẻ sảng khoái trước khi như tan ra từng đợt sóng vỗ với bờ cát vàng dưới hương thơm của rêu biển, nước muối và xạ hương.",
+      "productPrice": 165000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    },
+    {
+      "id": "18",
+      "productName": "Tinh dầu Black Cherry",
+      "productImgUrl": "https://aroma360.com/cdn/shop/products/Iris_1600x.jpg?v=1702907871",
+      "productDescription": "Chúng ta đều là những thi sĩ mải miết đi tìm cái đẹp trong đêm tối, để rồi trái tim lại bị mê hoặc bởi hương thơm say đắm lướt qua. Tinh dầu Black cherry ngọt ngào như một ly rượu vang đỏ sánh mịn, vuốt ve tâm trí bằng những vần thơ hay.  ",
+      "productPrice": 190000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    },
+    {
+      "id": "19",
+      "productName": "Tinh dầu Black Sea",
+      "productImgUrl": "https://th.bing.com/th/id/OIP.8wvPKGD4R1gmSR3-gQrXWAHaJQ?w=1000&h=1250&rs=1&pid=ImgDetMain",
+      "productDescription": "Black Sea - Mùi hương đầy những bí ẩn, huyễn hoặc, trọn vị tươi mát. Một nét tinh khôi trong vắt của lá chanh xanh cùng ozone. Đắm trong hương bạch đàn nồng, tê dại, pha với một chút chua ngọt của quả mận và vị mặn tinh tế của muối biển. ",
+      "productPrice": 165000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    },
+    {
+      "id": "20",
+      "productName": "Tinh dầu Caribbean Teakwood",
+      "productImgUrl": "https://aroma360.com/cdn/shop/products/Stargazing500mL_1200x.jpg?v=1695065457",
+      "productDescription": "Tinh dầu Caribbean Teakwood là một hương thơm phức tạp, táo bạo và có sức hấp dẫn rộng rãi. Nó dẫn đầu với hương đầu cay nồng của hạt tiêu Mexico hòa quyện với da thuộc. Hương giữa tạo nên vẻ phong cách lịch lãm mà mạnh mẽ với hương lá thuốc lá và gỗ tếch, đinh hương tạo nên sự lôi cuốn đến lạ kỳ.",
+      "productPrice": 120000,
+      "productRating": 5,
+      "ratingCount": 2,
+      "productStock": 4,
+      "categoryId": "2"
+    }
+  ],
+  "cart": [
+    {
+      "id": "df63",
+      "userId": "1",
+      "productId": "a082",
+      "quantity": 1
+    },
+    {
+      "id": "92f9",
+      "userId": "1",
+      "productId": "12",
+      "quantity": 1
+    },
+    {
+      "id": "d0b3",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "e4d9",
+      "userId": "8f56",
+      "productId": "2",
+      "quantity": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": "1",
+      "totalPrice": 1000000,
+      "status": "Đã hủy",
+      "createdAt": "2025-05-01T12:00:00"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "totalPrice": 1000000,
+      "status": "Đã xác nhận",
+      "createdAt": "2025-05-01T12:00:00"
+    },
+    {
+      "id": "3",
+      "userId": "2",
+      "totalPrice": 1000000,
+      "status": "Đang xử lý",
+      "createdAt": "2025-05-01T12:00:00"
+    },
+    {
+      "id": "4",
+      "userId": "3",
+      "totalPrice": 900000,
+      "status": "Đã xác nhận",
+      "createdAt": "2025-05-01T12:00:00"
+    },
+    {
+      "id": "5",
+      "userId": "2",
+      "totalPrice": 1000000,
+      "status": "Đang xử lý",
+      "createdAt": "2025-05-01T12:00:00"
+    },
+    {
+      "id": "6",
+      "userId": "2",
+      "totalPrice": 1000000,
+      "status": "Đã hủy",
+      "createdAt": "2025-05-01T12:00:00"
+    },
+    {
+      "id": "7",
+      "userId": "3",
+      "totalPrice": 900000,
+      "status": "Đã xác nhận",
+      "createdAt": "2025-05-01T12:00:00"
+    },
+    {
+      "id": "8",
+      "userId": "2",
+      "totalPrice": 1000000,
+      "status": "Đang xử lý",
+      "createdAt": "2025-05-01T12:00:00"
+    }
+  ],
+  "order_items": [
+    {
+      "id": "1",
+      "orderId": "1",
+      "productId": "1",
+      "quantity": 2,
+      "price": 500000
+    },
+    {
+      "id": "2",
+      "orderId": "2",
+      "productId": "3",
+      "quantity": 1,
+      "price": 800000
+    },
+    {
+      "id": "3",
+      "orderId": "3",
+      "productId": "1",
+      "quantity": 2,
+      "price": 500000
+    },
+    {
+      "id": "4",
+      "orderId": "4",
+      "productId": "3",
+      "quantity": 1,
+      "price": 800000
+    },
+    {
+      "id": "5",
+      "orderId": "5",
+      "productId": "1",
+      "quantity": 2,
+      "price": 500000
+    },
+    {
+      "id": "6",
+      "orderId": "6",
+      "productId": "3",
+      "quantity": 1,
+      "price": 800000
+    },
+    {
+      "id": "7",
+      "orderId": "7",
+      "productId": "3",
+      "quantity": 1,
+      "price": 800000
+    }
+  ]
+}

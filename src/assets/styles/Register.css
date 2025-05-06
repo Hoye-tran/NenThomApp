@@ -1,0 +1,89 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.register-container {
+  max-width: 400px;
+  margin: auto;
+  background: #ffffff;
+  padding: 32px 24px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.register-form input:focus {
+  border-color: #87002A;
+  outline: none;
+  box-shadow: 0 0 0 1px #87002A33;
+}
+
+.required {
+  color: #87002A;
+}
+
+.register-btn {
+  width: 100%;
+  background-color: #87002A;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #a33342;
+}
+
+.login-redirect {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.login-btn {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border: 1px solid #87002A;
+  color: #87002A;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #87002A;
+  color: #fff;
+}
