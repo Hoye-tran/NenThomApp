@@ -50,6 +50,10 @@
     justify-content: space-around;
 
   }
+  /* .product-detail-container p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  } */
   .flex-information-text {
     width: 610px;
     display: flex;
@@ -102,10 +106,7 @@
     border-radius: 3px;
   }
   
-  .product-detail-container p {
-    margin-bottom: 10px;
-    line-height: 1.6;
-  }
+ 
   
   .product-detail-container strong {
     font-weight: bold;

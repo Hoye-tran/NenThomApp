@@ -16,14 +16,13 @@ function Login(){
         event.preventDefault();
 
         try {
-            // Gọi API để lấy danh sách người mua
             const buyersResponse = await fetch('http://localhost:3001/buyers');
             if (!buyersResponse.ok) {
                 throw new Error(`HTTP error! status: ${buyersResponse.status}`);
             }
             const buyers = await buyersResponse.json();
 
-            // Gọi API để lấy danh sách người bán
+
             const sellersResponse = await fetch('http://localhost:3001/seller');
             if (!sellersResponse.ok) {
                 throw new Error(`HTTP error! status: ${sellersResponse.status}`);
