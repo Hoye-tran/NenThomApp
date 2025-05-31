@@ -1,17 +1,18 @@
 .product-list {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 1800px;
+  margin: 15px;
+  margin-left: 200px;
+  padding: 5px;
   font-family: 'Montserrat', sans-serif;
   color: #333;
 }
 
 .product-item {
-  width: 90%;
+  width: 80%;
   background-color: #fff;
   border: 1px solid #eee;
   border-radius: 8px;
-  padding: 16px;
+  /* padding: 2px; */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
@@ -20,14 +21,22 @@
 }
 
 .product-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  transform: scale(1.2);
 }
 
 .product-img {
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: cover;
   border-radius: 6px;
+  transition: transform 0.3s ease;
+  
+}
+
+.product-img:hover {
+  transform: scale(1.2);
+
 }
 
 .product-name-link {
@@ -67,4 +76,41 @@
 .add-cart-btn:hover {
   background-color: #80001C;
   color: white;
+}
+
+.pagination {
+  margin-bottom: 10px;;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 700px; 
+}
+
+.pagination button {
+  border: 1px solid #80001C;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 3px;
+  font-family: inherit;
+  background-color: white;
+  color: #80001C;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #80001C;
+  color: white;
+}
+/*  */
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  color: #aaa;
+  cursor: not-allowed;
+  border-color: #ccc;
+}
+
+.pagination .active-page {
+  background-color: #80001C;
+  color: white;
+  font-weight: bold;
 }

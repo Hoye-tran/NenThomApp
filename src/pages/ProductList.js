@@ -6,8 +6,18 @@ import { toast } from "react-toastify";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
   const navigate = useNavigate();
 
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = products.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(products.length / itemsPerPage);
+  const pageNumbers = [];
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(i);
+  }
   useEffect(() => {
     if (!localStorage.getItem("cart")) {
       localStorage.setItem("cart", JSON.stringify([]));
@@ -16,7 +26,7 @@ function ProductList() {
     fetch("http://localhost:3001/products")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Dữ liệu sản phẩm trả về: ", data);  
+        console.log("Dữ liệu sản phẩm trả về: ", data);
         setProducts(data);
       })
       .catch((error) => {
@@ -26,8 +36,7 @@ function ProductList() {
   }, []);
 
   const goToDetailProduct = (id) => {
-    console.log("Đi tới chi tiết sản phẩm với ID: ", id);
-    navigate(`/products/${id}`);  
+    navigate(`/products/${id}`);
   };
 
   const addToCart = (product) => {
@@ -46,21 +55,15 @@ function ProductList() {
 
     fetch("http://localhost:3001/cart", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(itemToAdd),
     })
       .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         return response.json();
       })
       .then((data) => {
-        console.log("Đã thêm vào giỏ hàng trên server:", data);
         toast.success("Đã thêm vào giỏ hàng!");
-
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
         const existingItem = cart.find(item => item.productId === product.id);
         if (existingItem) {
@@ -68,7 +71,6 @@ function ProductList() {
         } else {
           cart.push({ productId: product.id, quantity: 1 });
         }
-
         localStorage.setItem("cart", JSON.stringify(cart));
       })
       .catch((error) => {
@@ -80,21 +82,32 @@ function ProductList() {
   return (
     <Layout>
       <div className="product-list">
-        {products.map((product) => (
+        {currentItems.map((product) => (
           <div className="product-item" key={product.id}>
-            <img className="product-img"src={product.productImgUrl}  alt={product.productName}  
-            />
-            <Link to={`/products/${product.id}`} className="product-name-link"> 
-              <h3 className="product-name"onClick={() => goToDetailProduct(product.id)} >
-                {product.productName}  
+            <img className="product-img" src={product.productImgUrl} alt={product.productName} />
+            <Link to={`/products/${product.id}`} className="product-name-link">
+              <h3 className="product-name" onClick={() => goToDetailProduct(product.id)}>
+                {product.productName}
               </h3>
             </Link>
             <p className="product-price">
-              {product.productPrice ? product.productPrice.toLocaleString() : "N/A"} VNĐ </p>
+              {product.productPrice ? product.productPrice.toLocaleString() : "N/A"} VNĐ
+            </p>
             <button className="add-cart-btn" onClick={() => addToCart(product)}>Thêm</button>
           </div>
         ))}
       </div>
+
+      <div className="pagination">
+        <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>Trước</button>
+        {pageNumbers.map((number) => (
+          <button key={number} onClick={() => setCurrentPage(number)}>
+            {number}</button>
+        ))}
+
+        <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>Sau</button>
+      </div>
+
     </Layout>
   );
 }

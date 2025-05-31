@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../assets/styles/Login.css';
+import '../assets/styles/Register.css';
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
 
 function Register () {
-  // Quản lý state cho form
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -16,7 +15,6 @@ function Register () {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Kiểm tra tính hợp lệ của dữ liệu
     if (!username || !password || !confirmPassword || !address || !phone) {
       toast.error('Vui lòng điền đầy đủ thông tin.');
       return;
@@ -41,7 +39,6 @@ function Register () {
       // const data = await response.json();
       // toast.error('Đăng ký thành công:', data);
 
-      // Reset form sau khi submit
       setUsername('');
       setPassword('');
       setConfirmPassword('');
@@ -87,7 +84,6 @@ function Register () {
     <label htmlFor="confirmpassword">
       Xác nhận mật khẩu <span className="required-mark">*</span>
     </label>
-    <br></br>
     <input
       type="password"
       id="confirmpassword"
@@ -125,7 +121,7 @@ function Register () {
 </div>
     <button type="submit" className="register-btn">Tạo tài khoản mới</button>
   </form>
-
+        <hr></hr>
   <div className="login-redirect">
     <p>Đã có tài khoản?</p>
     <Link to="/">

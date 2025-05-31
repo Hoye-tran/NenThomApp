@@ -9,6 +9,8 @@ function OrderList() {
   const [buyers, setBuyers] = useState([]);
   const [filterStatus, setFilterStatus] = useState('Tất cả');
   const [searchKeyword, setSearchKeyword] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const ordersPerPage = 10;
 
   useEffect(() => {
     Promise.all([
@@ -54,13 +56,21 @@ function OrderList() {
     return buyer ? buyer.address : "Không rõ địa chỉ";
   };
 
-  // Lọc theo trạng thái và tìm kiếm theo tên người mua
   const filteredOrders = orders.filter(order => {
     const buyerName = getBuyerName(order.userId).toLowerCase();
     const matchesStatus = filterStatus === 'Tất cả' || order.status === filterStatus;
     const matchesSearch = buyerName.includes(searchKeyword.toLowerCase());
     return matchesStatus && matchesSearch;
   });
+
+  const indexOfLastOrder = currentPage * ordersPerPage;
+  const indexOfFirstOrder = indexOfLastOrder - ordersPerPage;
+  const currentOrders = filteredOrders.slice(indexOfFirstOrder, indexOfLastOrder);
+  const totalPages = Math.ceil(filteredOrders.length / ordersPerPage);
+  const pageNumbers = [];
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(i);
+  }
 
   return (
     <LayoutSeller>
@@ -79,10 +89,7 @@ function OrderList() {
             <i className="bi bi-search search-icon"></i>
           </div>
 
-
-
           <div className="filter-container">
-            {/* <label htmlFor="filterStatus">Lọc trạng thái: </label> */}
             <select
               id="filterStatus"
               className="filter-dropdown input-base"
@@ -94,11 +101,9 @@ function OrderList() {
               <option value="Đã xác nhận">Đã xác nhận</option>
               <option value="Đã hủy">Đã hủy</option>
             </select>
-
-
           </div>
-
         </div>
+
         <table className="order-table">
           <thead>
             <tr>
@@ -111,7 +116,7 @@ function OrderList() {
             </tr>
           </thead>
           <tbody>
-            {filteredOrders.map(order => (
+            {currentOrders.map(order => (
               <tr key={order.id}>
                 <td>
                   <Link to={`/orders/${order.id}`} className="order-id-link">
@@ -136,6 +141,14 @@ function OrderList() {
             ))}
           </tbody>
         </table>
+
+        <div className="pagination">
+          <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>Trước</button>
+          {pageNumbers.map((number) => (
+            <button key={number} onClick={() => setCurrentPage(number)}>{number}</button>
+          ))}
+          <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>Sau</button>
+        </div>
       </div>
     </LayoutSeller>
   );

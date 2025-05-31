@@ -3,7 +3,7 @@
   font-size: 32px;
   font-weight: 600;
   color: #000000;
-  margin-top: 40px;
+  margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -14,15 +14,15 @@
   border-radius: 4px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   text-align: center;
-  max-width: 520px;
-  margin: 40px auto;
+  max-width: 420px;
+  margin: 20px auto;
   font-family: 'Montserrat', sans-serif;
 }
 
 .payment-container h2 {
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   color: #000000;
 }
 
@@ -34,7 +34,7 @@
 }
 
 #qr-code {
-  width: 280px;
+  width: 200px;
   height: auto;
   border-radius: 8px;
   border: 1px solid #80001C;
@@ -45,7 +45,7 @@
 }
 
 .payment-success-btn {
-  margin-left: 1235px;
+  margin-left: 800px;
   margin-bottom: 18px;
   background-color: #80001C;
   color: white;

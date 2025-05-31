@@ -15,7 +15,11 @@
     margin-bottom: 32px;
     text-align: center;
   }
-  
+  .product-categorise{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #80001C;
+  }
   .flex-information {
     display: flex;
     flex-wrap: wrap;

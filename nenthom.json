@@ -52,9 +52,9 @@
       "id": "1",
       "productName": "Nến thơm Mahogany White tea & Sage(140g)",
       "productImgUrl": "https://www.misa.in/cdn/shop/products/PicsArt_08-01-07.03.44_2048x.jpg?v=1627824863",
-      "productDescription": "Tinh dầu, sáp ong và sáp cọ thiên nhiên, an toàn và thân thiện với môi trường",
-      "productPrice": 750000,
-      "productStock": 4,
+      "productDescription": "Tinh dầu, sáp ong và sáp cọ thiên nhiên, an toàn và thân thiện với môi trường. Thơm lắm",
+      "productPrice": "850000",
+      "productStock": "5",
       "categoryId": "1",
       "product-stock": "43",
       "product-categorise": "1"
@@ -68,7 +68,8 @@
       "productRating": 5,
       "ratingCount": 2,
       "productStock": 4,
-      "categoryId": "1"
+      "categoryId": "1",
+      "product-categorise": ""
     },
     {
       "id": "3",
@@ -233,7 +234,10 @@
       "productRating": 5,
       "ratingCount": 2,
       "productStock": 4,
-      "categoryId": "2"
+      "categoryId": "2",
+      "productname": "Tinh dầu Beach Wal",
+      "product-stock": "3",
+      "product-categorise": "2"
     },
     {
       "id": "18",
@@ -293,6 +297,54 @@
       "userId": "8f56",
       "productId": "2",
       "quantity": 1
+    },
+    {
+      "id": "cdb0",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "d7f8",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "b27e",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "04f3",
+      "userId": "1",
+      "productId": "5",
+      "quantity": 1
+    },
+    {
+      "id": "32a5",
+      "userId": "3",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "a8e6",
+      "userId": "3",
+      "productId": "2",
+      "quantity": 1
+    },
+    {
+      "id": "19a2",
+      "userId": "1",
+      "productId": "2",
+      "quantity": 1
+    },
+    {
+      "id": "1bce",
+      "userId": "1",
+      "productId": "3",
+      "quantity": 1
     }
   ],
   "orders": [
@@ -314,7 +366,7 @@
       "id": "3",
       "userId": "2",
       "totalPrice": 1000000,
-      "status": "Đang xử lý",
+      "status": "Đã hủy",
       "createdAt": "2025-05-01T12:00:00"
     },
     {
@@ -328,7 +380,7 @@
       "id": "5",
       "userId": "2",
       "totalPrice": 1000000,
-      "status": "Đang xử lý",
+      "status": "Đã xác nhận",
       "createdAt": "2025-05-01T12:00:00"
     },
     {
