@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 function ProductList() {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 12;
+  const itemsPerPage = 8;
   const navigate = useNavigate();
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -43,7 +43,7 @@ function ProductList() {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
     if (!currentUser) {
       toast.error("Bạn phải đăng nhập trước khi thêm vào giỏ!");
-      navigate("/login");
+      navigate("/");
       return;
     }
 
@@ -58,25 +58,31 @@ function ProductList() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(itemToAdd),
     })
-      .then((response) => {
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        return response.json();
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
       })
-      .then((data) => {
+      .then(() => {
         toast.success("Đã thêm vào giỏ hàng!");
+
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        const existingItem = cart.find(item => item.productId === product.id);
+
+        const updatedCart = [...cart];
+        const existingItem = updatedCart.find(item => item.productId === product.id);
+
         if (existingItem) {
           existingItem.quantity += 1;
         } else {
-          cart.push({ productId: product.id, quantity: 1 });
+          updatedCart.push({ productId: product.id, quantity: 1 });
         }
-        localStorage.setItem("cart", JSON.stringify(cart));
+
+        localStorage.setItem("cart", JSON.stringify(updatedCart));
       })
       .catch((error) => {
         console.error("Lỗi khi thêm vào giỏ hàng:", error);
         toast.error("Có lỗi khi thêm vào giỏ hàng!");
       });
+
   };
 
   return (

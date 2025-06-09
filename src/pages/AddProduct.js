@@ -10,7 +10,7 @@ function AddProduct() {
   const [productPrice, setProductPrice] = useState('');
   const [productImgUrl, setProductImgUrl] = useState('');
   const [productDescription, setProductDescription] = useState('');
-  const [productCategoriseId, setProductCategoriseId] = useState('');
+  const [categoryId, setProductCategoriseId] = useState('');
   const [productStock, setProductStock] = useState('');
   const [categories, setCategories] = useState([]);
 
@@ -24,20 +24,20 @@ function AddProduct() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!productName || !productPrice || !productImgUrl || !productDescription || !productCategoriseId || !productStock) {
+    if (!productName || !productPrice || !productImgUrl || !productDescription || !categoryId || !productStock) {
         toast.error('Vui lòng điền đầy đủ thông tin sản phẩm.');
       return;
     }
 
     const newProduct = {
-      productname: productName,
-      "product-price": Number(productPrice),
-      "product-img-url": productImgUrl,
-      "product-description": productDescription,
-      "product-categorise": productCategoriseId,
-      "product-stock": Number(productStock),
-      product_rating: 0,
-      rating_count: 0
+      productName: productName,
+      productPrice: Number(productPrice),
+      productImgUrl: productImgUrl,
+      productDescription: productDescription,
+      categoryId: categoryId,
+      productStock: Number(productStock),
+      productRating: 0,
+      ratingCount: 0
     };
 
     try {
@@ -111,7 +111,7 @@ function AddProduct() {
         <select
           id="product-categorise"
           name="product-categorise" 
-          value={productCategoriseId}
+          value={categoryId}
           onChange={(e) => setProductCategoriseId(e.target.value)}
         >
           <option value="">Chọn danh mục</option>

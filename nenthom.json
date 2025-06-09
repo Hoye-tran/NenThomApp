@@ -28,6 +28,41 @@
       "password": "abcd1234",
       "address": "01 Phan Thanh, Đà Nẵng",
       "phone": "0123456789"
+    },
+    {
+      "id": "1b9b",
+      "username": "sakura123",
+      "password": "Sakura123@",
+      "address": "01 Phan Thanh, Đà Nẵng",
+      "phone": "0123456789"
+    },
+    {
+      "id": "bde7",
+      "username": "shinichi123",
+      "password": "Shinichi123@",
+      "address": "01 Phan Thanh, Đà Nẵng",
+      "phone": "0123456789"
+    },
+    {
+      "id": "45e6",
+      "username": "shinichi123",
+      "password": "Shinichi123@",
+      "address": "01 Phan Thanh, Đà Nẵng",
+      "phone": "0123456789"
+    },
+    {
+      "id": "8fee",
+      "username": "shinichi1234",
+      "password": "Shinichi123@",
+      "address": "01 Phan Thanh, Đà Nẵng",
+      "phone": "0123456789"
+    },
+    {
+      "id": "2721",
+      "username": "shinichi1235",
+      "password": "navigate('/');",
+      "address": "01 Phan Thanh, Đà Nẵng",
+      "phone": "0123456789"
     }
   ],
   "categories": [
@@ -64,12 +99,12 @@
       "productName": "Nến Thơm Mahogany Teakwood (2 bấc)",
       "productImgUrl": "https://www.misa.in/cdn/shop/files/Sacred-Sanctuary_1_2048x.jpg?v=1723101171",
       "productDescription": "Tinh dầu, sáp ong và sáp cọ thiên nhiên, an toàn và thân thiện với môi trường",
-      "productPrice": 790000,
+      "productPrice": "250000",
       "productRating": 5,
       "ratingCount": 2,
       "productStock": 4,
       "categoryId": "1",
-      "product-categorise": ""
+      "product-categorise": "1"
     },
     {
       "id": "3",
@@ -271,6 +306,17 @@
       "ratingCount": 2,
       "productStock": 4,
       "categoryId": "2"
+    },
+    {
+      "id": "90dd",
+      "productName": "Nến Thơm Himalaya White Tea (2 bấc)",
+      "productPrice": 750000,
+      "productImgUrl": "https://product.hstatic.net/200000455999/product/white_tea_57f96abf209a4199afb9aaeb4022217e.png",
+      "productDescription": "Hương thơm tươi mát, sạch sẽ của chanh, cam và quýt mang đến cảm giác tươi mát, trong lành như buổi sớm mai nơi đồi trà, không khói bụi, không ồn ào. Vị gừng cay nồng hoà vào hương hoa nhài ngọt ngào tạo ra hương thơm xoa dịu, bầu không khí nhẹ nhàng, thanh tao. Sự kết hợp hài hoà của vị hương tươi mát cùng hương hoa dễ chịu, White Tea hương vị của vụ trà mới, như cơn gió mát lành lướt qua cuốn theo tất thảy những băn khoăn vướng bận.",
+      "categoryId": "2",
+      "productStock": "49",
+      "productRating": 0,
+      "ratingCount": 0
     }
   ],
   "cart": [
@@ -344,6 +390,276 @@
       "id": "1bce",
       "userId": "1",
       "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "2558",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "6af4",
+      "userId": "1",
+      "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "5929",
+      "userId": "1",
+      "productId": "4",
+      "quantity": 1
+    },
+    {
+      "id": "f1e4",
+      "userId": "1",
+      "productId": "8",
+      "quantity": 1
+    },
+    {
+      "id": "1bd8",
+      "userId": "1",
+      "productId": "4",
+      "quantity": 1
+    },
+    {
+      "id": "c892",
+      "userId": "1",
+      "productId": "12",
+      "quantity": 1
+    },
+    {
+      "id": "b651",
+      "userId": "1",
+      "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "b8f2",
+      "userId": "1",
+      "productId": "11",
+      "quantity": 1
+    },
+    {
+      "id": "282b",
+      "userId": "1",
+      "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "430b",
+      "userId": "1",
+      "productId": "12",
+      "quantity": 1
+    },
+    {
+      "id": "3dcd",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "e907",
+      "userId": "1",
+      "productId": "2",
+      "quantity": 1
+    },
+    {
+      "id": "1dfe",
+      "userId": "1",
+      "productId": "4",
+      "quantity": 1
+    },
+    {
+      "id": "4b10",
+      "userId": "1",
+      "productId": "12",
+      "quantity": 1
+    },
+    {
+      "id": "2c83",
+      "userId": "1",
+      "productId": "11",
+      "quantity": 1
+    },
+    {
+      "id": "267f",
+      "userId": "1",
+      "productId": "10",
+      "quantity": 1
+    },
+    {
+      "id": "5090",
+      "userId": "1",
+      "productId": "9",
+      "quantity": 1
+    },
+    {
+      "id": "1b4b",
+      "userId": "1",
+      "productId": "2",
+      "quantity": 1
+    },
+    {
+      "id": "c383",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "8864",
+      "userId": "1",
+      "productId": "4",
+      "quantity": 1
+    },
+    {
+      "id": "ce31",
+      "userId": "1",
+      "productId": "12",
+      "quantity": 1
+    },
+    {
+      "id": "20b9",
+      "userId": "1",
+      "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "76f4",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "ca1e",
+      "userId": "1",
+      "productId": "10",
+      "quantity": 1
+    },
+    {
+      "id": "f7c1",
+      "userId": "1",
+      "productId": "12",
+      "quantity": 1
+    },
+    {
+      "id": "42af",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "0729",
+      "userId": "1",
+      "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "ab6d",
+      "userId": "1",
+      "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "573c",
+      "userId": "2",
+      "productId": "8",
+      "quantity": 1
+    },
+    {
+      "id": "3b51",
+      "userId": "1",
+      "productId": "2",
+      "quantity": 1
+    },
+    {
+      "id": "c847",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "ba16",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "e92b",
+      "userId": "1",
+      "productId": "2",
+      "quantity": 1
+    },
+    {
+      "id": "3c85",
+      "userId": "1",
+      "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "a976",
+      "userId": "1",
+      "productId": "7",
+      "quantity": 1
+    },
+    {
+      "id": "10d5",
+      "userId": "1",
+      "productId": "6",
+      "quantity": 1
+    },
+    {
+      "id": "43bb",
+      "userId": "1",
+      "productId": "5",
+      "quantity": 1
+    },
+    {
+      "id": "2a62",
+      "userId": "1",
+      "productId": "9",
+      "quantity": 1
+    },
+    {
+      "id": "82cf",
+      "userId": "1",
+      "productId": "10",
+      "quantity": 1
+    },
+    {
+      "id": "5f41",
+      "userId": "1",
+      "productId": "11",
+      "quantity": 1
+    },
+    {
+      "id": "0ebf",
+      "userId": "1",
+      "productId": "12",
+      "quantity": 1
+    },
+    {
+      "id": "bc50",
+      "userId": "1",
+      "productId": "2",
+      "quantity": 1
+    },
+    {
+      "id": "8647",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "c6b0",
+      "userId": "1",
+      "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "a9b1",
+      "userId": "1",
+      "productId": "4",
       "quantity": 1
     }
   ],

@@ -150,6 +150,43 @@
 .btn-confirm:hover{
   background-color: #5a0215;
 }
+.pagination {
+  margin-bottom: 10px;;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 900px; 
+}
+
+.pagination button {
+  border: 1px solid #80001C;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 3px;
+  font-family: inherit;
+  background-color: white;
+  color: #80001C;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #80001C;
+  color: white;
+}
+/*  */
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  color: #aaa;
+  cursor: not-allowed;
+  border-color: #ccc;
+}
+
+.pagination .active-page {
+  background-color: #80001C;
+  color: white;
+  font-weight: bold;
+}
+
 
 /* .label-order{
   display: flex;

@@ -7,7 +7,7 @@ import LayoutSeller from "../components/layout/LayoutSeller";
 function ProductListSeller() {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 12; 
+  const itemsPerPage = 8; 
   const navigate = useNavigate();
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -48,8 +48,7 @@ function ProductListSeller() {
             toast.success("Đã xóa sản phẩm.");
             if (
               (currentPage - 1) * itemsPerPage >=
-                products.length - 1 &&
-              currentPage > 1
+                products.length - 1 && currentPage > 1
             ) {
               setCurrentPage(currentPage - 1);
             }

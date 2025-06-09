@@ -30,7 +30,6 @@ function Login(){
             }
             const sellers = await sellersResponse.json();
 
-            // Kiểm tra xem người dùng có phải là người mua không
             const authenticatedBuyer = buyers.find(
                 (user) => user.username === username && user.password === password
             );

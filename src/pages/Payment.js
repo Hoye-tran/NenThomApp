@@ -38,7 +38,7 @@ function Payment() {
       <div className="payment-container">
         <h2>Số tiền cần thanh toán:</h2>
         <p id="amount">{amount ? amount : "0"} VNĐ</p>
-        {/* Kiểm tra qrUrl trước khi render ảnh */}
+
         {qrUrl ? <img id="qr-code" src={qrUrl} alt="QR Code thanh toán" /> : null}
       </div>
       <Link to='/productlist'>
@@ -50,6 +50,7 @@ function Payment() {
           Đã thanh toán
         </button>
       </Link>
+
     </Layout>
   );
 }

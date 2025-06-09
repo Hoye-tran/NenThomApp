@@ -38,14 +38,11 @@ function EditProduct() {
       productDescription,
       productPrice,
       productStock,
+      categoryId
     } = product;
 
     if (
-      !productName ||
-      !productImgUrl ||
-      !productDescription ||
-      isNaN(productPrice) ||
-      isNaN(productStock)
+      !productName ||!productImgUrl ||!productDescription ||isNaN(productPrice) ||isNaN(productStock) ||!categoryId
     ) {
       toast.error("Điền đầy đủ và chính xác thông tin sản phẩm!");
       return;
@@ -90,7 +87,7 @@ function EditProduct() {
               <textarea name="productDescription" value={product.productDescription} onChange={handleChange} placeholder="Mô tả" />
               <input type="number" name="productPrice" value={product.productPrice} onChange={handleChange} placeholder="Giá" />
               <input type="number" name="productStock" value={product.productStock} onChange={handleChange} placeholder="Số lượng" />
-              <select name="product-categorise" value={product["product-categorise"]} onChange={handleChange}>
+              <select className="product-categorise" name="categoryId" value={product.categoryId} onChange={handleChange}>
 
                 <option value="">Chọn danh mục</option>
                 {categories.map((cat) => (
